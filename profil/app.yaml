@@ -1,0 +1,13 @@
+# Konfigurasi Google App Engine Standard untuk website HTML statis.
+runtime: python314
+
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
+    secure: always
+
+  - url: /.*
+    static_files: index.html
+    upload: index.html
+    secure: always
